@@ -1,0 +1,30 @@
+.final {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(34, 34, 34);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.final__container {
+  width: 70%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: aqua;
+}
+.final__container > p {
+  font-size: 72px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.final__container > .MuiButtonBase-root {
+margin-top: 40px;
+}
