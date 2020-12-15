@@ -2,7 +2,7 @@
   "name": "quiz",
   "version": "0.1.0",
   "private": true,
-  "repository": {"url": "http://ebi10sa22.github.io/quiz"},
+  "homepage": "https://ebi10sa22.github.io/quiz",
   "dependencies": {
     "@material-ui/core": "^4.11.2",
     "@material-ui/icons": "^4.11.2",

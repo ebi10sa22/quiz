@@ -65,8 +65,7 @@ function Category() {
 
   return (
     <div className="category" style={{ justifyContent: show && "center", transform: response === undefined ? "translateY(0px)" : "translateY(-999px)" }}>
-      <span></span>
-      <p></p>
+      {!show && <p></p>}
       <div className="category__options">
         <FormControl className="category__form">
           <InputLabel>Category</InputLabel>
@@ -112,39 +111,6 @@ function Category() {
           </Select>
           <FormHelperText>{questions === "" ? "Select Something to proceed" : `You have selected ${questions}`}</FormHelperText>
         </FormControl>
-        {/* <FormControl
-          className="category__form"
-          style={{
-            margin: themes.spacing(1),
-            minWidth: 120
-          }}
-        >
-          <InputLabel>Tags</InputLabel>
-          <Select
-          defaultValue= ""
-            multiple
-            disabled={show}
-            id="demo-mutiple-chip"
-            value={chips_value}
-            onChange={handleChip}
-            input={(<Input id="select-multiple-chip" />)}
-            renderValue={(selected) => (
-              <div style={{ display: 'flex', flexWrap: 'wrap' }}>
-                {selected.map((value) => (
-                  <Chip key={value} style={{ margin: 2 }} label={value} />
-                ))}
-              </div>
-            )}
-            MenuProps={MenuProps}
-          >
-            {names.map((name => (
-              <MenuItem key={name} value={name} style={getStyles(name, chips_value, themes)}>
-                {name}
-              </MenuItem>
-            )))}
-          </Select>
-          <FormHelperText>{chips_value.length === 0 ? "Select Something to proceed (Optional)" : `You have selected ${chips_value}.`}</FormHelperText>
-        </FormControl> */}
         {!show && <Button variant="contained" color="secondary" style={{ marginTop: 20 }} onClick={handleClick}>Next</Button>}
       </div>
       <form className="category__user" onSubmit={handleSubmit} style={{ transform: show ? "translateX(0px)" : "translateX(1000px)", display: show ? "flex" : "none" }}>
