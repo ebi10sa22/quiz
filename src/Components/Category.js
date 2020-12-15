@@ -65,7 +65,7 @@ function Category() {
 
   return (
     <div className="category" style={{ justifyContent: show && "center", transform: response === undefined ? "translateY(0px)" : "translateY(-999px)" }}>
-      {!show && <p>Questions will be random according to the category you choose !</p>}
+      {show ? "" : <p>Questions will be random according to the category you choose !</p>}
       <div className="category__options">
         <FormControl className="category__form">
           <InputLabel>Category</InputLabel>

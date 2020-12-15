@@ -9,7 +9,7 @@ function App() {
   const API_KEY = "8QOzZnKgftwBO9RKZSzhsClUwOjwQ8lZLTXR5EfK"
   const [{data,response,final},dispatch] = useStateProvider();
   useEffect(() => {
-    data !== undefined && axios.get(`https://quizapi.io/api/v1/questions?apiKey=${API_KEY}&limit=${data?.questions}&tags=${data?.chips_value}&difficult=${data?.difficulty}`)
+    data !== undefined && axios.get(`https://quizapi.io/api/v1/questions?apiKey=${API_KEY}&limit=${data?.questions}&difficult=${data?.difficulty}`)
     .then(response => dispatch({
       type : "SET_RESPONSE",
       response : response.data
