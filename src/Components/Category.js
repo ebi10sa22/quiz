@@ -15,7 +15,7 @@ function Category() {
   const [email, setEmail] = useState('');
   const [show, setShow] = useState(false);
   const [backdrop, setBackDrop] = useState(false);
-  const names = ['Bash', 'DevOps', 'Docker', 'HTML', 'Javascipt', 'Kubernetes','Larvel', 'Linux', 'MySQL', 'PHP', 'WordPress'];
+  // const names = ['Bash', 'DevOps', 'Docker', 'HTML', 'Javascipt', 'Kubernetes','Larvel', 'Linux', 'MySQL', 'PHP', 'WordPress'];
   const numbers = [5, 10, 15, 20];
   const datas = { category, difficulty, questions, chips_value, name, email }
   const themes = useTheme();

@@ -4,9 +4,9 @@
   left: 0px;
   width: 100%;
   height: 100vh;
-  background: rgb(34, 34, 34);
   display: flex;
   justify-content: center;
+  background-color: aquamarine;
   align-items: center;
 }
 
@@ -18,6 +18,8 @@
   flex-direction: column;
   align-items: center;
   background-color: aqua;
+  border-radius: 20px;
+  box-shadow: 1px -1px 20px 1px white,1px 1px 50px 1px rgb(53, 155, 168) inset;
 }
 .final__container > p {
   font-size: 72px;
@@ -27,4 +29,16 @@
 
 .final__container > .MuiButtonBase-root {
 margin-top: 40px;
+}
+
+
+@media all and (max-width : 800px){
+  .final__container > p {
+    font-size: 42px;
+    font-weight: 400;
+    width: 100%;
+  }
+  .final__container {
+    width: 90%;
+  }
 }
